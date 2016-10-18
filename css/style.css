@@ -1,0 +1,119 @@
+body{
+	background-image: url("http://localhost:8080/webdev/assets/bckimg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; 
+	background-size: cover;
+}
+
+.icons{
+	background: url("http://localhost:8080/webdev/assets/sprite-red.png");
+	width: 24px;
+	height: 24px;
+	margin-top: 10px;
+	margin-left: 13px;
+}
+#banbutton{background-position: -24px 0px;}
+#infobutton{background-position: 0px 0px;}
+
+#websitelogo {
+
+	border: 1.3px solid black;
+	position: relative;
+	top: -50px;
+	left: 167px;
+	width: 25%;
+	height: 25%;
+	border-radius: 100%; /* mudei para 100% tava 200% */
+	box-shadow: 0px 0px 20px;
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+	position: relative;
+	font-family: sans-serif;
+}
+
+#loginform {
+	margin: auto;
+	margin-top: 120px;
+	/*padding: 10px; Padding extra para os assest dentro do div*/
+
+	width: 440px;
+	height: 500px;
+	background-color: #131a20;
+	/* 2E4150/1f1f2e */
+	border: 1.3px solid black;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px;
+}
+
+#loginbutton{
+	font-family: sans-serif;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	line-height: 35px;  
+	border-radius: 5px;
+	border: 1px solid black;
+	position: relative;
+	/*margin: 60px  auto;*/
+	top: 70px;
+	left: 33%;
+	width: 150px;
+	height: 35px;
+	
+	background: linear-gradient(#006080, #33ccff);
+}
+#loginbutton:hover{
+	background: linear-gradient(#0099cc, #66d9ff);
+}
+#input {
+    left: 43px;
+    top: 30px;
+	position: relative;
+	display: block;
+	margin-top: 10px;
+	width: 350px;
+	height: 35px;
+	border-radius: 5px;
+}
+#incorrectlogin {
+	margin: auto;
+	margin-top: -20px;
+	position: relative;
+	z-index: -1;
+	/*padding: 10px; Padding extra para os assest dentro do div*/
+	
+	width: 438px;
+	height: 87px;
+	background-color: #360e10;
+	 
+	border: 1.3px solid #551E21;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0px 0px 20px;
+}
+#alerttext{
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: -37px;
+	width: 375px;
+	height: 50px; 
+}
+#incpass{
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #999999;
+	position: relative;
+}	
+#fp{
+	font-style: normal;
+	font-family: sans-serif;
+	color: white;
+	top: 110px;
+	position: relative;
+}
+ 
+

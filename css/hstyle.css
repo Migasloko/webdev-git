@@ -1,0 +1,166 @@
+.logo{
+	z-index: 1;
+	display: inline-block;
+	left: 32px;
+	width: 4%;
+	top: 5%;
+	position: relative;
+	border: 5px solid #dadbdb;
+	opacity: 0.5;
+	border-radius: 100%;
+	box-shadow: 0px 0px 25px #111;
+}
+h2{
+	position: absolute;
+	margin-top: 18px;
+	left: 150px;
+	opacity: 0.5;
+	color: #dadbdb;
+	font-size: 2em;
+	font-family: Verdana;
+}
+
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	background-color: #2A2D33;
+}
+.leftbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 145px;
+	height: 100%;
+	background-color: #2A2D33;
+}
+.buttons{
+	display: inline-block;
+	position: relative;
+	margin-top: 100px;
+}
+.mainButtons > *{
+	border-left: 3px solid transparent;
+	position: relative;
+	transition: border-color 500ms ease;
+	width: 141px;
+	height: 100px;
+}
+.miscButtons > *{
+	border-left: 3px solid transparent;
+	position: relative;
+	transition: border-color 500ms ease;
+	width: 141px;
+	height: 70px;
+}
+.separator{
+	height: 2px;
+	background: #2f353b;
+	padding: 0;
+	width: 100px;
+	margin: 0 auto;
+}
+.icons{
+	background: url("http://localhost:8080/webdev/assets/sprite.png");
+	position: relative;
+	margin: auto;
+	width: 45px;
+	height: 45px;
+	opacity: 0.5;
+}
+.icons:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.panel{
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: -955px;
+	height: 100%;
+	width: 955px; /*955*/
+	background-color: #F2F2F2;
+	transition: transform 700ms cubic-bezier(.72,-0.55,.34,1.61);
+
+	pointer-events: none;
+}
+.panel.clicked{
+	transform: translate(1100px, 0px);
+}
+.tphead{
+	font-family: sans-serif;
+	font-size: 1em;
+	color: grey;
+	vertical-align: bottom;
+	position: relative;
+	width:80%;
+
+	border-bottom: 2px solid #ddd;
+	line-height: 1.6; /* Espaço entre row */
+}
+.test:hover .panel{
+	transform: transition(145px, 0px);
+}
+.topheader{
+	position: relative;
+	left: 30px;
+	top: -35px;
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: #424345;
+	font-size: 1.8em;
+}
+.borderbottom{
+	border-bottom: 2px solid #ddd;
+}
+@font-face {
+		font-family: awesome;
+		src:url("http://localhost:8080/webdev/fonts/fontawesome-webfontba72.ttf");
+}
+#play{
+	background-position: 0px 0px;
+	top: 20px;
+}
+#topplayers{
+	background-position: -45px 0px;
+	top: 20px;
+}
+#history{
+	background-position: -90px 0px;
+	top: 20px;
+}
+#faq{
+	background-position: -180px 0px;
+	top: 20px;
+}
+#sideexit{
+	background-position: -225px -16px;
+	position: relative;
+	top: 3.5%;
+	left: 43%;
+	vertical-align:top
+}
+p{
+	font-weight: bold;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 0.9em;
+	color: white;
+	position: relative;
+	top: 3px;
+}
+/*-----------*/
+/*TRANSITIONS*/
+/*-----------*/
+.mainButtons > *:hover{
+	border-left: 3px solid;
+	border-color: white;
+	/*background-color: white;*/
+}
+.miscButtons > *:hover{
+	border-left: 3px solid;
+	border-color: white;
+	/*background-color: white; */
+}
